@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Primary Meta Tags -->
+	<title>Rock, Paper & Scissors</title>
+	<meta name="title" content="Rock, Paper & Scissors">
+	<meta name="description" content="It is a game witten in JavaScript. You can play with a Bot">
+
+	<link rel="canonical" href="https://Ankush Attri-xd.is-a.dev/RPS-Game/" />
+	<link rel="stylesheet" href="Style/style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body oncontextmenu="return true">
+	<div id="particles-js"></div>
+
+	<!-- navbar -->
+
+	<nav class="nav-bar">
+		<div class="menu-bar">
+			<div class="menu-icon">
+				<div class="wrapper-menu">
+					<div class="line-menu half start"></div>
+					<div class="line-menu"></div>
+					<div class="line-menu half end"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="spinner">
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li><a href="https://ankkkush.github.io">Home</a></li>
+				<li><a href="https://ankkkush.github.io/Portfolio#About-me">About</a></li>
+				<li><a href="https://ankkkush.github.io/Portfolio#Skills">Skill</a></li>
+				<li><a href="https://ankkkush.github.io/Portfolio#Contacts">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<div class="wrapper">
+			<div class="title">
+				<h1>Rock, Paper & Scissors</h1>
+			</div>
+
+			<div class="container">
+				<div class="boxes">
+					<h2>User</h2>
+					<div class="box" id="user"></div>
+				</div>
+				<div class="boxes">
+					<h2>Bot</h2>
+					<div class="box" id="bot"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="hand" onclick="rpsgame('rock')">
+					<span class="iconify" data-icon="la:hand-rock"></span>
+				</div>
+				<div class="hand" onclick="rpsgame('paper')">
+					<span class="iconify" data-icon="la:hand-paper"></span>
+				</div>
+				<div class="hand" onclick="rpsgame('scissors')">
+					<span class="iconify" data-icon="la:hand-scissors"></span>
+				</div>
+			</div>
+
+			<div class="result" id="result">Choose your move</div>
+
+			<div class="score" id="score">
+				<div class="score-box user-score">USER: 0</div>
+				<div class="score-box bot-score">COMPUTER: 0</div>
+			</div>
+		</div>
+		<footer class="foot">
+			<h4>&copy; Copyrights 2021 by Ankush Attri. All Rights Reserved.</h4>
+		</footer>
+	</main>
+
+	<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+	<script src="Script/particles.min.js"></script>
+	<script src="Script/script.js"></script>
+</body>
+
+</html>
